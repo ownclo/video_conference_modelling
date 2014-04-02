@@ -69,9 +69,8 @@ if __name__ == "__main__":
     print "Autocorrelation (shift = 1):", cor1
     print "Autocorrelation (shift = 2):", corr[2]
 
+    # Testing DAR distribution
+    dar_seq = numpy.array(take(10000, dar(cor1, mean, var)))
 
-    neg_bin_seq = neg_bin(mean, var)
-    dar_seq = dar(cor1, mean, var)
-
-    print take(100, neg_bin_seq)
-    print take(100, dar_seq)
+    print dar_seq.mean(), dar_seq.var()
+    print acf(dar_seq)[:3]
