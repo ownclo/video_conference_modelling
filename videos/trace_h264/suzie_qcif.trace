@@ -1,0 +1,171 @@
+yuv [info]: 176x144p 0:0 @ 25/1 fps (cfr)
+x264 [warning]: --psnr used with psy on: results will be invalid!
+x264 [warning]: --tune psnr should be used if attempting to benchmark psnr!
+x264 [debug]: using mv_range_thread = 24
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2 AVX
+x264 [info]: profile High, level 1.1
+x264 [debug]: frame=   0 QP=2.00 NAL=3 Slice:I Poc:0   I:99   P:0    SKIP:0    size=18748 bytes PSNR Y:61.65 U:66.96 V:67.40
+x264 [debug]: frame=   1 QP=5.00 NAL=2 Slice:P Poc:2   I:2    P:97   SKIP:0    size=7950 bytes PSNR Y:55.63 U:56.99 V:57.20
+x264 [debug]: frame=   2 QP=5.00 NAL=2 Slice:P Poc:4   I:0    P:99   SKIP:0    size=9276 bytes PSNR Y:55.64 U:57.47 V:57.13
+x264 [debug]: frame=   3 QP=5.00 NAL=2 Slice:P Poc:6   I:1    P:98   SKIP:0    size=9499 bytes PSNR Y:55.81 U:57.15 V:57.02
+x264 [debug]: frame=   4 QP=5.00 NAL=2 Slice:P Poc:8   I:0    P:99   SKIP:0    size=8973 bytes PSNR Y:55.80 U:57.36 V:57.23
+x264 [debug]: frame=   5 QP=5.00 NAL=2 Slice:P Poc:10  I:0    P:99   SKIP:0    size=8356 bytes PSNR Y:55.70 U:57.06 V:57.03
+x264 [debug]: frame=   6 QP=5.00 NAL=2 Slice:P Poc:12  I:0    P:99   SKIP:0    size=8189 bytes PSNR Y:55.63 U:57.49 V:57.29
+x264 [debug]: frame=   7 QP=5.00 NAL=2 Slice:P Poc:14  I:0    P:99   SKIP:0    size=8244 bytes PSNR Y:55.74 U:57.28 V:56.94
+x264 [debug]: frame=   8 QP=5.00 NAL=2 Slice:P Poc:16  I:0    P:99   SKIP:0    size=8181 bytes PSNR Y:55.73 U:57.11 V:57.05
+x264 [debug]: frame=   9 QP=5.00 NAL=2 Slice:P Poc:18  I:0    P:99   SKIP:0    size=8512 bytes PSNR Y:55.77 U:57.28 V:56.99
+x264 [debug]: frame=  10 QP=5.00 NAL=2 Slice:P Poc:20  I:1    P:98   SKIP:0    size=8854 bytes PSNR Y:55.77 U:57.38 V:57.22
+x264 [debug]: frame=  11 QP=5.00 NAL=2 Slice:P Poc:22  I:1    P:98   SKIP:0    size=9191 bytes PSNR Y:55.79 U:57.19 V:57.20
+x264 [debug]: frame=  12 QP=5.00 NAL=2 Slice:P Poc:24  I:1    P:98   SKIP:0    size=9041 bytes PSNR Y:55.76 U:57.18 V:57.05
+x264 [debug]: frame=  13 QP=5.00 NAL=2 Slice:P Poc:26  I:1    P:98   SKIP:0    size=9541 bytes PSNR Y:55.89 U:57.35 V:57.09
+x264 [debug]: frame=  14 QP=5.00 NAL=2 Slice:P Poc:28  I:2    P:97   SKIP:0    size=9787 bytes PSNR Y:55.68 U:57.44 V:57.58
+x264 [debug]: frame=  15 QP=5.00 NAL=2 Slice:P Poc:30  I:0    P:99   SKIP:0    size=9084 bytes PSNR Y:55.81 U:57.22 V:57.11
+x264 [debug]: frame=  16 QP=5.00 NAL=2 Slice:P Poc:32  I:2    P:97   SKIP:0    size=8865 bytes PSNR Y:55.78 U:57.22 V:57.17
+x264 [debug]: frame=  17 QP=5.00 NAL=2 Slice:P Poc:34  I:0    P:99   SKIP:0    size=9541 bytes PSNR Y:55.78 U:56.99 V:57.15
+x264 [debug]: frame=  18 QP=5.00 NAL=2 Slice:P Poc:36  I:1    P:98   SKIP:0    size=9730 bytes PSNR Y:55.76 U:57.57 V:57.36
+x264 [debug]: frame=  19 QP=5.00 NAL=2 Slice:P Poc:38  I:0    P:99   SKIP:0    size=9067 bytes PSNR Y:55.68 U:57.39 V:57.47
+x264 [debug]: frame=  20 QP=5.00 NAL=2 Slice:P Poc:40  I:3    P:96   SKIP:0    size=9088 bytes PSNR Y:55.72 U:57.41 V:57.02
+x264 [debug]: frame=  21 QP=5.00 NAL=2 Slice:P Poc:42  I:2    P:97   SKIP:0    size=8413 bytes PSNR Y:55.78 U:57.11 V:56.97
+x264 [debug]: frame=  22 QP=5.00 NAL=2 Slice:P Poc:44  I:0    P:99   SKIP:0    size=8366 bytes PSNR Y:55.83 U:57.43 V:57.20
+x264 [debug]: frame=  23 QP=5.00 NAL=2 Slice:P Poc:46  I:1    P:98   SKIP:0    size=8800 bytes PSNR Y:55.67 U:57.47 V:56.94
+x264 [debug]: frame=  24 QP=5.00 NAL=2 Slice:P Poc:48  I:1    P:98   SKIP:0    size=8743 bytes PSNR Y:55.83 U:57.22 V:57.22
+x264 [debug]: frame=  25 QP=5.00 NAL=2 Slice:P Poc:50  I:0    P:99   SKIP:0    size=9058 bytes PSNR Y:55.75 U:57.16 V:56.95
+x264 [debug]: frame=  26 QP=5.00 NAL=2 Slice:P Poc:52  I:1    P:98   SKIP:0    size=9203 bytes PSNR Y:55.77 U:57.48 V:57.12
+x264 [debug]: frame=  27 QP=5.00 NAL=2 Slice:P Poc:54  I:0    P:99   SKIP:0    size=9194 bytes PSNR Y:55.79 U:57.59 V:57.33
+x264 [debug]: frame=  28 QP=5.00 NAL=2 Slice:P Poc:56  I:0    P:99   SKIP:0    size=9093 bytes PSNR Y:55.75 U:57.34 V:57.06
+x264 [debug]: frame=  29 QP=5.00 NAL=2 Slice:P Poc:58  I:1    P:98   SKIP:0    size=9263 bytes PSNR Y:55.88 U:57.10 V:57.55
+x264 [debug]: frame=  30 QP=5.00 NAL=2 Slice:P Poc:60  I:0    P:99   SKIP:0    size=9150 bytes PSNR Y:55.76 U:57.18 V:57.39
+x264 [debug]: frame=  31 QP=5.00 NAL=2 Slice:P Poc:62  I:0    P:99   SKIP:0    size=9037 bytes PSNR Y:55.79 U:57.48 V:57.18
+x264 [debug]: frame=  32 QP=5.00 NAL=2 Slice:P Poc:64  I:0    P:99   SKIP:0    size=9056 bytes PSNR Y:55.82 U:57.53 V:57.42
+x264 [debug]: frame=  33 QP=5.00 NAL=2 Slice:P Poc:66  I:0    P:99   SKIP:0    size=8948 bytes PSNR Y:55.78 U:57.21 V:57.27
+x264 [debug]: frame=  34 QP=5.00 NAL=2 Slice:P Poc:68  I:0    P:99   SKIP:0    size=9065 bytes PSNR Y:55.82 U:57.30 V:57.21
+x264 [debug]: frame=  35 QP=5.00 NAL=2 Slice:P Poc:70  I:1    P:98   SKIP:0    size=9156 bytes PSNR Y:55.80 U:57.34 V:57.28
+x264 [debug]: frame=  36 QP=5.00 NAL=2 Slice:P Poc:72  I:1    P:98   SKIP:0    size=9136 bytes PSNR Y:55.79 U:57.38 V:57.07
+x264 [debug]: frame=  37 QP=5.00 NAL=2 Slice:P Poc:74  I:0    P:99   SKIP:0    size=9350 bytes PSNR Y:55.72 U:57.39 V:57.36
+x264 [debug]: frame=  38 QP=5.00 NAL=2 Slice:P Poc:76  I:0    P:99   SKIP:0    size=9597 bytes PSNR Y:55.90 U:57.35 V:57.40
+x264 [debug]: frame=  39 QP=5.00 NAL=2 Slice:P Poc:78  I:2    P:97   SKIP:0    size=9829 bytes PSNR Y:55.79 U:57.16 V:57.64
+x264 [debug]: frame=  40 QP=5.00 NAL=2 Slice:P Poc:80  I:1    P:98   SKIP:0    size=9889 bytes PSNR Y:55.93 U:57.15 V:57.39
+x264 [debug]: frame=  41 QP=5.00 NAL=2 Slice:P Poc:82  I:1    P:98   SKIP:0    size=10157 bytes PSNR Y:55.75 U:57.26 V:57.26
+x264 [debug]: frame=  42 QP=5.00 NAL=2 Slice:P Poc:84  I:2    P:97   SKIP:0    size=10469 bytes PSNR Y:55.75 U:57.30 V:57.43
+x264 [debug]: frame=  43 QP=5.00 NAL=2 Slice:P Poc:86  I:5    P:94   SKIP:0    size=10696 bytes PSNR Y:55.85 U:57.17 V:57.11
+x264 [debug]: frame=  44 QP=5.00 NAL=2 Slice:P Poc:88  I:6    P:93   SKIP:0    size=10800 bytes PSNR Y:55.72 U:57.41 V:57.49
+x264 [debug]: frame=  45 QP=5.00 NAL=2 Slice:P Poc:90  I:7    P:92   SKIP:0    size=10831 bytes PSNR Y:55.68 U:57.26 V:57.39
+x264 [debug]: frame=  46 QP=5.00 NAL=2 Slice:P Poc:92  I:6    P:93   SKIP:0    size=10999 bytes PSNR Y:55.65 U:57.56 V:57.56
+x264 [debug]: frame=  47 QP=5.00 NAL=2 Slice:P Poc:94  I:11   P:88   SKIP:0    size=11228 bytes PSNR Y:55.68 U:57.53 V:57.45
+x264 [debug]: frame=  48 QP=5.00 NAL=2 Slice:P Poc:96  I:16   P:83   SKIP:0    size=11105 bytes PSNR Y:55.60 U:57.47 V:57.46
+x264 [debug]: frame=  49 QP=5.00 NAL=2 Slice:P Poc:98  I:16   P:83   SKIP:0    size=10896 bytes PSNR Y:55.69 U:57.60 V:57.46
+x264 [debug]: frame=  50 QP=5.00 NAL=2 Slice:P Poc:100 I:16   P:83   SKIP:0    size=10333 bytes PSNR Y:55.60 U:57.53 V:57.37
+x264 [debug]: frame=  51 QP=5.00 NAL=2 Slice:P Poc:102 I:24   P:75   SKIP:0    size=9745 bytes PSNR Y:55.74 U:57.58 V:57.77
+x264 [debug]: frame=  52 QP=5.00 NAL=2 Slice:P Poc:104 I:14   P:85   SKIP:0    size=9332 bytes PSNR Y:55.68 U:57.38 V:57.42
+x264 [debug]: frame=  53 QP=5.00 NAL=2 Slice:P Poc:106 I:18   P:81   SKIP:0    size=9695 bytes PSNR Y:55.68 U:57.72 V:57.61
+x264 [debug]: frame=  54 QP=5.00 NAL=2 Slice:P Poc:108 I:17   P:82   SKIP:0    size=9622 bytes PSNR Y:55.60 U:57.47 V:57.62
+x264 [debug]: frame=  55 QP=5.00 NAL=2 Slice:P Poc:110 I:11   P:88   SKIP:0    size=9695 bytes PSNR Y:55.64 U:57.84 V:57.58
+x264 [debug]: frame=  56 QP=5.00 NAL=2 Slice:P Poc:112 I:29   P:70   SKIP:0    size=9983 bytes PSNR Y:55.64 U:57.59 V:57.62
+x264 [debug]: frame=  57 QP=5.00 NAL=2 Slice:P Poc:114 I:21   P:78   SKIP:0    size=10041 bytes PSNR Y:55.68 U:57.78 V:57.51
+x264 [debug]: frame=  58 QP=5.00 NAL=2 Slice:P Poc:116 I:12   P:87   SKIP:0    size=9792 bytes PSNR Y:55.61 U:57.43 V:57.67
+x264 [debug]: frame=  59 QP=5.00 NAL=2 Slice:P Poc:118 I:19   P:80   SKIP:0    size=9898 bytes PSNR Y:55.61 U:57.75 V:57.52
+x264 [debug]: frame=  60 QP=5.00 NAL=2 Slice:P Poc:120 I:13   P:86   SKIP:0    size=9910 bytes PSNR Y:55.72 U:57.62 V:57.55
+x264 [debug]: frame=  61 QP=5.00 NAL=2 Slice:P Poc:122 I:10   P:89   SKIP:0    size=9911 bytes PSNR Y:55.74 U:57.72 V:57.56
+x264 [debug]: frame=  62 QP=5.00 NAL=2 Slice:P Poc:124 I:10   P:89   SKIP:0    size=9998 bytes PSNR Y:55.74 U:57.47 V:57.32
+x264 [debug]: frame=  63 QP=5.00 NAL=2 Slice:P Poc:126 I:9    P:90   SKIP:0    size=10122 bytes PSNR Y:55.72 U:57.52 V:57.06
+x264 [debug]: frame=  64 QP=5.00 NAL=2 Slice:P Poc:128 I:8    P:91   SKIP:0    size=9964 bytes PSNR Y:55.68 U:57.33 V:57.51
+x264 [debug]: frame=  65 QP=5.00 NAL=2 Slice:P Poc:130 I:7    P:92   SKIP:0    size=10113 bytes PSNR Y:55.77 U:57.48 V:57.53
+x264 [debug]: frame=  66 QP=5.00 NAL=2 Slice:P Poc:132 I:8    P:91   SKIP:0    size=10012 bytes PSNR Y:55.78 U:57.52 V:57.06
+x264 [debug]: frame=  67 QP=5.00 NAL=2 Slice:P Poc:134 I:4    P:95   SKIP:0    size=10031 bytes PSNR Y:55.78 U:57.49 V:57.46
+x264 [debug]: frame=  68 QP=5.00 NAL=2 Slice:P Poc:136 I:1    P:98   SKIP:0    size=9794 bytes PSNR Y:55.91 U:57.32 V:57.23
+x264 [debug]: frame=  69 QP=5.00 NAL=2 Slice:P Poc:138 I:1    P:98   SKIP:0    size=9704 bytes PSNR Y:55.68 U:57.59 V:57.42
+x264 [debug]: frame=  70 QP=5.00 NAL=2 Slice:P Poc:140 I:1    P:98   SKIP:0    size=9643 bytes PSNR Y:55.71 U:57.51 V:57.29
+x264 [debug]: frame=  71 QP=5.00 NAL=2 Slice:P Poc:142 I:3    P:96   SKIP:0    size=9787 bytes PSNR Y:55.71 U:57.44 V:57.24
+x264 [debug]: frame=  72 QP=5.00 NAL=2 Slice:P Poc:144 I:3    P:96   SKIP:0    size=9490 bytes PSNR Y:55.79 U:57.28 V:57.37
+x264 [debug]: frame=  73 QP=5.00 NAL=2 Slice:P Poc:146 I:5    P:94   SKIP:0    size=9783 bytes PSNR Y:55.87 U:57.36 V:57.27
+x264 [debug]: frame=  74 QP=5.00 NAL=2 Slice:P Poc:148 I:3    P:96   SKIP:0    size=9949 bytes PSNR Y:55.68 U:57.37 V:57.24
+x264 [debug]: frame=  75 QP=5.00 NAL=2 Slice:P Poc:150 I:1    P:98   SKIP:0    size=9867 bytes PSNR Y:55.84 U:57.50 V:57.28
+x264 [debug]: frame=  76 QP=5.00 NAL=2 Slice:P Poc:152 I:2    P:97   SKIP:0    size=9753 bytes PSNR Y:55.84 U:57.29 V:57.24
+x264 [debug]: frame=  77 QP=5.00 NAL=2 Slice:P Poc:154 I:1    P:98   SKIP:0    size=9924 bytes PSNR Y:55.68 U:57.27 V:57.15
+x264 [debug]: frame=  78 QP=5.00 NAL=2 Slice:P Poc:156 I:4    P:95   SKIP:0    size=10144 bytes PSNR Y:55.75 U:57.28 V:57.11
+x264 [debug]: frame=  79 QP=5.00 NAL=2 Slice:P Poc:158 I:1    P:98   SKIP:0    size=9970 bytes PSNR Y:55.80 U:57.43 V:57.12
+x264 [debug]: frame=  80 QP=5.00 NAL=2 Slice:P Poc:160 I:0    P:99   SKIP:0    size=10058 bytes PSNR Y:55.76 U:57.07 V:57.02
+x264 [debug]: frame=  81 QP=5.00 NAL=2 Slice:P Poc:162 I:3    P:96   SKIP:0    size=10236 bytes PSNR Y:55.75 U:57.28 V:57.37
+x264 [debug]: frame=  82 QP=5.00 NAL=2 Slice:P Poc:164 I:0    P:99   SKIP:0    size=10160 bytes PSNR Y:55.76 U:57.23 V:57.13
+x264 [debug]: frame=  83 QP=5.00 NAL=2 Slice:P Poc:166 I:0    P:99   SKIP:0    size=10319 bytes PSNR Y:55.62 U:57.27 V:57.26
+x264 [debug]: frame=  84 QP=5.00 NAL=2 Slice:P Poc:168 I:4    P:95   SKIP:0    size=10286 bytes PSNR Y:55.80 U:57.14 V:57.18
+x264 [debug]: frame=  85 QP=5.00 NAL=2 Slice:P Poc:170 I:1    P:98   SKIP:0    size=10146 bytes PSNR Y:55.81 U:57.20 V:57.46
+x264 [debug]: frame=  86 QP=5.00 NAL=2 Slice:P Poc:172 I:0    P:99   SKIP:0    size=10083 bytes PSNR Y:55.82 U:57.40 V:57.38
+x264 [debug]: frame=  87 QP=5.00 NAL=2 Slice:P Poc:174 I:0    P:99   SKIP:0    size=9946 bytes PSNR Y:55.73 U:57.22 V:57.35
+x264 [debug]: frame=  88 QP=5.00 NAL=2 Slice:P Poc:176 I:1    P:98   SKIP:0    size=9918 bytes PSNR Y:55.64 U:57.42 V:57.40
+x264 [debug]: frame=  89 QP=5.00 NAL=2 Slice:P Poc:178 I:0    P:99   SKIP:0    size=9979 bytes PSNR Y:55.70 U:57.24 V:57.12
+x264 [debug]: frame=  90 QP=5.00 NAL=2 Slice:P Poc:180 I:1    P:98   SKIP:0    size=10050 bytes PSNR Y:55.77 U:57.49 V:57.35
+x264 [debug]: frame=  91 QP=5.00 NAL=2 Slice:P Poc:182 I:1    P:98   SKIP:0    size=10086 bytes PSNR Y:55.71 U:57.49 V:57.39
+x264 [debug]: frame=  92 QP=5.00 NAL=2 Slice:P Poc:184 I:0    P:99   SKIP:0    size=9927 bytes PSNR Y:55.78 U:57.09 V:57.23
+x264 [debug]: frame=  93 QP=5.00 NAL=2 Slice:P Poc:186 I:3    P:96   SKIP:0    size=9924 bytes PSNR Y:55.73 U:57.50 V:57.17
+x264 [debug]: frame=  94 QP=5.00 NAL=2 Slice:P Poc:188 I:2    P:97   SKIP:0    size=9791 bytes PSNR Y:55.67 U:57.39 V:57.43
+x264 [debug]: frame=  95 QP=5.00 NAL=2 Slice:P Poc:190 I:2    P:97   SKIP:0    size=9712 bytes PSNR Y:55.75 U:57.25 V:57.21
+x264 [debug]: frame=  96 QP=5.00 NAL=2 Slice:P Poc:192 I:3    P:96   SKIP:0    size=9518 bytes PSNR Y:55.77 U:57.69 V:57.12
+x264 [debug]: frame=  97 QP=5.00 NAL=2 Slice:P Poc:194 I:2    P:97   SKIP:0    size=9450 bytes PSNR Y:55.88 U:57.30 V:57.10
+x264 [debug]: frame=  98 QP=5.00 NAL=2 Slice:P Poc:196 I:1    P:98   SKIP:0    size=9120 bytes PSNR Y:55.78 U:57.14 V:57.18
+x264 [debug]: frame=  99 QP=5.00 NAL=2 Slice:P Poc:198 I:4    P:95   SKIP:0    size=8744 bytes PSNR Y:55.65 U:57.44 V:57.19
+x264 [debug]: frame= 100 QP=5.00 NAL=2 Slice:P Poc:200 I:0    P:99   SKIP:0    size=8269 bytes PSNR Y:55.70 U:57.48 V:57.26
+x264 [debug]: frame= 101 QP=5.00 NAL=2 Slice:P Poc:202 I:2    P:97   SKIP:0    size=8403 bytes PSNR Y:55.76 U:57.01 V:57.03
+x264 [debug]: frame= 102 QP=5.00 NAL=2 Slice:P Poc:204 I:2    P:97   SKIP:0    size=8639 bytes PSNR Y:55.67 U:57.26 V:57.24
+x264 [debug]: frame= 103 QP=5.00 NAL=2 Slice:P Poc:206 I:0    P:99   SKIP:0    size=8805 bytes PSNR Y:55.77 U:57.32 V:57.23
+x264 [debug]: frame= 104 QP=5.00 NAL=2 Slice:P Poc:208 I:1    P:98   SKIP:0    size=9066 bytes PSNR Y:55.82 U:57.56 V:57.31
+x264 [debug]: frame= 105 QP=5.00 NAL=2 Slice:P Poc:210 I:1    P:98   SKIP:0    size=9190 bytes PSNR Y:55.74 U:57.11 V:57.70
+x264 [debug]: frame= 106 QP=5.00 NAL=2 Slice:P Poc:212 I:2    P:97   SKIP:0    size=9217 bytes PSNR Y:55.69 U:57.27 V:57.21
+x264 [debug]: frame= 107 QP=5.00 NAL=2 Slice:P Poc:214 I:1    P:98   SKIP:0    size=9098 bytes PSNR Y:55.86 U:57.36 V:57.19
+x264 [debug]: frame= 108 QP=5.00 NAL=2 Slice:P Poc:216 I:0    P:99   SKIP:0    size=9071 bytes PSNR Y:55.79 U:57.55 V:57.40
+x264 [debug]: frame= 109 QP=5.00 NAL=2 Slice:P Poc:218 I:3    P:96   SKIP:0    size=9208 bytes PSNR Y:55.71 U:57.11 V:57.19
+x264 [debug]: frame= 110 QP=5.00 NAL=2 Slice:P Poc:220 I:3    P:96   SKIP:0    size=9040 bytes PSNR Y:55.80 U:57.42 V:57.23
+x264 [debug]: frame= 111 QP=5.00 NAL=2 Slice:P Poc:222 I:1    P:98   SKIP:0    size=8838 bytes PSNR Y:55.66 U:57.27 V:57.34
+x264 [debug]: frame= 112 QP=5.00 NAL=2 Slice:P Poc:224 I:0    P:99   SKIP:0    size=8280 bytes PSNR Y:55.78 U:57.44 V:57.26
+x264 [debug]: frame= 113 QP=5.00 NAL=2 Slice:P Poc:226 I:1    P:98   SKIP:0    size=8026 bytes PSNR Y:55.67 U:57.03 V:57.11
+x264 [debug]: frame= 114 QP=5.00 NAL=2 Slice:P Poc:228 I:2    P:97   SKIP:0    size=8387 bytes PSNR Y:55.62 U:57.28 V:57.28
+x264 [debug]: frame= 115 QP=5.00 NAL=2 Slice:P Poc:230 I:1    P:98   SKIP:0    size=8975 bytes PSNR Y:55.67 U:57.22 V:57.43
+x264 [debug]: frame= 116 QP=5.00 NAL=2 Slice:P Poc:232 I:0    P:99   SKIP:0    size=9113 bytes PSNR Y:55.80 U:57.04 V:57.53
+x264 [debug]: frame= 117 QP=5.00 NAL=2 Slice:P Poc:234 I:1    P:98   SKIP:0    size=9029 bytes PSNR Y:55.82 U:57.34 V:57.32
+x264 [debug]: frame= 118 QP=5.00 NAL=2 Slice:P Poc:236 I:1    P:98   SKIP:0    size=8874 bytes PSNR Y:55.83 U:57.38 V:57.46
+x264 [debug]: frame= 119 QP=5.00 NAL=2 Slice:P Poc:238 I:2    P:97   SKIP:0    size=8900 bytes PSNR Y:55.75 U:57.41 V:57.35
+x264 [debug]: frame= 120 QP=5.00 NAL=2 Slice:P Poc:240 I:3    P:96   SKIP:0    size=8989 bytes PSNR Y:55.79 U:57.22 V:57.11
+x264 [debug]: frame= 121 QP=5.00 NAL=2 Slice:P Poc:242 I:1    P:98   SKIP:0    size=8922 bytes PSNR Y:55.57 U:57.38 V:57.16
+x264 [debug]: frame= 122 QP=5.00 NAL=2 Slice:P Poc:244 I:2    P:97   SKIP:0    size=8849 bytes PSNR Y:55.65 U:57.42 V:57.10
+x264 [debug]: frame= 123 QP=5.00 NAL=2 Slice:P Poc:246 I:4    P:95   SKIP:0    size=8815 bytes PSNR Y:55.70 U:57.42 V:57.26
+x264 [debug]: frame= 124 QP=5.00 NAL=2 Slice:P Poc:248 I:1    P:98   SKIP:0    size=8830 bytes PSNR Y:55.82 U:57.19 V:57.16
+x264 [debug]: frame= 125 QP=5.00 NAL=2 Slice:P Poc:250 I:4    P:95   SKIP:0    size=8827 bytes PSNR Y:55.76 U:57.10 V:57.09
+x264 [debug]: frame= 126 QP=5.00 NAL=2 Slice:P Poc:252 I:1    P:98   SKIP:0    size=8735 bytes PSNR Y:55.75 U:57.38 V:57.11
+x264 [debug]: frame= 127 QP=5.00 NAL=2 Slice:P Poc:254 I:0    P:99   SKIP:0    size=8870 bytes PSNR Y:55.63 U:57.39 V:57.13
+x264 [debug]: frame= 128 QP=5.00 NAL=2 Slice:P Poc:256 I:2    P:97   SKIP:0    size=8916 bytes PSNR Y:55.83 U:57.31 V:57.48
+x264 [debug]: frame= 129 QP=5.00 NAL=2 Slice:P Poc:258 I:2    P:97   SKIP:0    size=8788 bytes PSNR Y:55.71 U:57.31 V:57.33
+x264 [debug]: frame= 130 QP=5.00 NAL=2 Slice:P Poc:260 I:6    P:93   SKIP:0    size=8924 bytes PSNR Y:55.77 U:57.47 V:57.33
+x264 [debug]: frame= 131 QP=5.00 NAL=2 Slice:P Poc:262 I:3    P:96   SKIP:0    size=8869 bytes PSNR Y:55.78 U:57.11 V:57.53
+x264 [debug]: frame= 132 QP=5.00 NAL=2 Slice:P Poc:264 I:1    P:98   SKIP:0    size=8940 bytes PSNR Y:55.77 U:57.30 V:57.25
+x264 [debug]: frame= 133 QP=5.00 NAL=2 Slice:P Poc:266 I:1    P:98   SKIP:0    size=9043 bytes PSNR Y:55.74 U:57.44 V:57.35
+x264 [debug]: frame= 134 QP=5.00 NAL=2 Slice:P Poc:268 I:4    P:95   SKIP:0    size=8875 bytes PSNR Y:55.84 U:57.03 V:57.18
+x264 [debug]: frame= 135 QP=5.00 NAL=2 Slice:P Poc:270 I:3    P:96   SKIP:0    size=8918 bytes PSNR Y:55.72 U:57.55 V:57.33
+x264 [debug]: frame= 136 QP=5.00 NAL=2 Slice:P Poc:272 I:4    P:95   SKIP:0    size=8997 bytes PSNR Y:55.74 U:57.31 V:57.55
+x264 [debug]: frame= 137 QP=5.00 NAL=2 Slice:P Poc:274 I:5    P:94   SKIP:0    size=9123 bytes PSNR Y:55.74 U:57.32 V:57.31
+x264 [debug]: frame= 138 QP=5.00 NAL=2 Slice:P Poc:276 I:6    P:93   SKIP:0    size=9131 bytes PSNR Y:55.90 U:57.24 V:57.11
+x264 [debug]: frame= 139 QP=5.00 NAL=2 Slice:P Poc:278 I:5    P:94   SKIP:0    size=8745 bytes PSNR Y:55.71 U:57.65 V:57.50
+x264 [debug]: frame= 140 QP=5.00 NAL=2 Slice:P Poc:280 I:4    P:95   SKIP:0    size=8423 bytes PSNR Y:55.76 U:57.46 V:57.30
+x264 [debug]: frame= 141 QP=5.00 NAL=2 Slice:P Poc:282 I:4    P:95   SKIP:0    size=8572 bytes PSNR Y:55.66 U:57.46 V:57.13
+x264 [debug]: frame= 142 QP=5.00 NAL=2 Slice:P Poc:284 I:3    P:96   SKIP:0    size=8854 bytes PSNR Y:55.68 U:57.25 V:57.21
+x264 [debug]: frame= 143 QP=5.00 NAL=2 Slice:P Poc:286 I:2    P:97   SKIP:0    size=8765 bytes PSNR Y:55.68 U:57.33 V:57.07
+x264 [debug]: frame= 144 QP=5.00 NAL=2 Slice:P Poc:288 I:0    P:99   SKIP:0    size=8605 bytes PSNR Y:55.61 U:57.23 V:57.35
+x264 [debug]: frame= 145 QP=5.00 NAL=2 Slice:P Poc:290 I:2    P:97   SKIP:0    size=8586 bytes PSNR Y:55.77 U:57.10 V:57.17
+x264 [debug]: frame= 146 QP=5.00 NAL=2 Slice:P Poc:292 I:4    P:95   SKIP:0    size=8668 bytes PSNR Y:55.65 U:57.27 V:57.17
+x264 [debug]: frame= 147 QP=5.00 NAL=2 Slice:P Poc:294 I:2    P:97   SKIP:0    size=8453 bytes PSNR Y:55.75 U:57.49 V:57.25
+x264 [debug]: frame= 148 QP=5.00 NAL=2 Slice:P Poc:296 I:3    P:96   SKIP:0    size=8173 bytes PSNR Y:55.70 U:56.86 V:57.22
+x264 [debug]: frame= 149 QP=5.00 NAL=2 Slice:P Poc:298 I:2    P:97   SKIP:0    size=8541 bytes PSNR Y:55.76 U:57.14 V:57.11
+x264 [info]: frame I:1     Avg QP: 2.00  size: 18748  PSNR Mean Y:61.65 U:66.96 V:67.40 Avg:62.84 Global:62.84
+x264 [info]: frame P:149   Avg QP: 5.00  size:  9343  PSNR Mean Y:55.74 U:57.35 V:57.28 Avg:56.20 Global:56.20
+x264 [info]: mb I  I16..4: 15.2%  0.0% 84.8%
+x264 [info]: mb P  I16..4:  0.1%  2.2%  1.2%  P16..4: 29.3% 36.1% 31.2%  0.0%  0.0%    skip: 0.0%
+x264 [info]: 8x8 transform intra:52.7% inter:25.2%
+x264 [info]: coded y,uvDC,uvAC intra: 100.0% 99.3% 98.8% inter: 100.0% 99.2% 99.2%
+x264 [info]: i16 v,h,dc,p: 13%  3% 39% 45%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 16% 28%  4%  4%  5%  8%  8% 10%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 20%  7% 13%  7% 10% 15%  6% 13%  9%
+x264 [info]: i8c dc,h,v,p: 64%  4% 21% 11%
+x264 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x264 [info]: ref P L0: 56.9% 18.6% 14.7%  9.8%
+x264 [info]: PSNR Mean Y:55.782 U:57.411 V:57.349 Avg:56.249 Global:56.227 kb/s:1881.17
+
+encoded 150 frames, 242.23 fps, 1881.17 kb/s
