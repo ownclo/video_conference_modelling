@@ -91,7 +91,7 @@ public:
 		p = expected / variance;
 		r = expected * p / (1 - p);
 
-		//printf("Negative binomial distribution:\n\tp = %lf\n\tr = %lf\n", p, r);
+		printf("Negative binomial distribution:\n\tp = %lf\n\tr = %lf\n", p, r);
 	}
 
 	int genVal()
