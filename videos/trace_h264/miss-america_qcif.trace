@@ -4,7 +4,7 @@ x264 [warning]: --tune psnr should be used if attempting to benchmark psnr!
 x264 [debug]: using mv_range_thread = 24
 x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2 AVX
 x264 [info]: profile High, level 1.1
-x264 [debug]: frame=   0 QP=2.00 NAL=3 Slice:I Poc:0   I:99   P:0    SKIP:0    size=16781 bytes PSNR Y:61.54 U:67.70 V:68.16
+x264 [debug]: frame=   0 QP=2.00 NAL=3 Slice:I Poc:0   I:99   P:0    SKIP:0    size=16785 bytes PSNR Y:61.54 U:67.70 V:68.16
 x264 [debug]: frame=   1 QP=5.00 NAL=2 Slice:P Poc:2   I:37   P:62   SKIP:0    size=10792 bytes PSNR Y:55.74 U:58.01 V:57.84
 x264 [debug]: frame=   2 QP=5.00 NAL=2 Slice:P Poc:4   I:33   P:66   SKIP:0    size=10777 bytes PSNR Y:55.79 U:58.19 V:58.13
 x264 [debug]: frame=   3 QP=5.00 NAL=2 Slice:P Poc:6   I:34   P:65   SKIP:0    size=10697 bytes PSNR Y:55.78 U:58.23 V:58.07
@@ -154,7 +154,7 @@ x264 [debug]: frame= 146 QP=5.00 NAL=2 Slice:P Poc:292 I:33   P:66   SKIP:0    s
 x264 [debug]: frame= 147 QP=5.00 NAL=2 Slice:P Poc:294 I:30   P:69   SKIP:0    size=10489 bytes PSNR Y:55.79 U:58.03 V:57.93
 x264 [debug]: frame= 148 QP=5.00 NAL=2 Slice:P Poc:296 I:34   P:65   SKIP:0    size=10645 bytes PSNR Y:55.73 U:58.06 V:58.11
 x264 [debug]: frame= 149 QP=5.00 NAL=2 Slice:P Poc:298 I:34   P:65   SKIP:0    size=10606 bytes PSNR Y:55.73 U:58.05 V:58.11
-x264 [info]: frame I:1     Avg QP: 2.00  size: 16781  PSNR Mean Y:61.54 U:67.70 V:68.16 Avg:62.82 Global:62.82
+x264 [info]: frame I:1     Avg QP: 2.00  size: 16785  PSNR Mean Y:61.54 U:67.70 V:68.16 Avg:62.82 Global:62.82
 x264 [info]: frame P:149   Avg QP: 5.00  size: 10735  PSNR Mean Y:55.76 U:58.14 V:58.11 Avg:56.41 Global:56.41
 x264 [info]: mb I  I16..4: 34.3%  1.0% 64.6%
 x264 [info]: mb P  I16..4:  1.5% 28.4%  5.6%  P16..4: 17.9% 26.3% 20.4%  0.0%  0.0%    skip: 0.0%
@@ -166,6 +166,6 @@ x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 12% 26% 27%  6%  6%  5%  5%  5%  7%
 x264 [info]: i8c dc,h,v,p: 63% 21%  7% 10%
 x264 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
 x264 [info]: ref P L0: 54.7% 10.8% 23.0% 11.5%
-x264 [info]: PSNR Mean Y:55.797 U:58.203 V:58.175 Avg:56.456 Global:56.435 kb/s:2154.98
+x264 [info]: PSNR Mean Y:55.797 U:58.203 V:58.175 Avg:56.456 Global:56.435 kb/s:2154.99
 
-encoded 150 frames, 207.53 fps, 2154.98 kb/s
+encoded 150 frames, 184.44 fps, 2154.99 kb/s

@@ -4,7 +4,7 @@ x264 [warning]: --tune psnr should be used if attempting to benchmark psnr!
 x264 [debug]: using mv_range_thread = 24
 x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2 AVX
 x264 [info]: profile High, level 1.1
-x264 [debug]: frame=   0 QP=2.00 NAL=3 Slice:I Poc:0   I:99   P:0    SKIP:0    size=18748 bytes PSNR Y:61.65 U:66.96 V:67.40
+x264 [debug]: frame=   0 QP=2.00 NAL=3 Slice:I Poc:0   I:99   P:0    SKIP:0    size=18752 bytes PSNR Y:61.65 U:66.96 V:67.40
 x264 [debug]: frame=   1 QP=5.00 NAL=2 Slice:P Poc:2   I:2    P:97   SKIP:0    size=7950 bytes PSNR Y:55.63 U:56.99 V:57.20
 x264 [debug]: frame=   2 QP=5.00 NAL=2 Slice:P Poc:4   I:0    P:99   SKIP:0    size=9276 bytes PSNR Y:55.64 U:57.47 V:57.13
 x264 [debug]: frame=   3 QP=5.00 NAL=2 Slice:P Poc:6   I:1    P:98   SKIP:0    size=9499 bytes PSNR Y:55.81 U:57.15 V:57.02
@@ -154,7 +154,7 @@ x264 [debug]: frame= 146 QP=5.00 NAL=2 Slice:P Poc:292 I:4    P:95   SKIP:0    s
 x264 [debug]: frame= 147 QP=5.00 NAL=2 Slice:P Poc:294 I:2    P:97   SKIP:0    size=8453 bytes PSNR Y:55.75 U:57.49 V:57.25
 x264 [debug]: frame= 148 QP=5.00 NAL=2 Slice:P Poc:296 I:3    P:96   SKIP:0    size=8173 bytes PSNR Y:55.70 U:56.86 V:57.22
 x264 [debug]: frame= 149 QP=5.00 NAL=2 Slice:P Poc:298 I:2    P:97   SKIP:0    size=8541 bytes PSNR Y:55.76 U:57.14 V:57.11
-x264 [info]: frame I:1     Avg QP: 2.00  size: 18748  PSNR Mean Y:61.65 U:66.96 V:67.40 Avg:62.84 Global:62.84
+x264 [info]: frame I:1     Avg QP: 2.00  size: 18752  PSNR Mean Y:61.65 U:66.96 V:67.40 Avg:62.84 Global:62.84
 x264 [info]: frame P:149   Avg QP: 5.00  size:  9343  PSNR Mean Y:55.74 U:57.35 V:57.28 Avg:56.20 Global:56.20
 x264 [info]: mb I  I16..4: 15.2%  0.0% 84.8%
 x264 [info]: mb P  I16..4:  0.1%  2.2%  1.2%  P16..4: 29.3% 36.1% 31.2%  0.0%  0.0%    skip: 0.0%
@@ -168,4 +168,4 @@ x264 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
 x264 [info]: ref P L0: 56.9% 18.6% 14.7%  9.8%
 x264 [info]: PSNR Mean Y:55.782 U:57.411 V:57.349 Avg:56.249 Global:56.227 kb/s:1881.17
 
-encoded 150 frames, 242.23 fps, 1881.17 kb/s
+encoded 150 frames, 218.89 fps, 1881.17 kb/s

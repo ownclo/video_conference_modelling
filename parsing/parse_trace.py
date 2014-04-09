@@ -3,6 +3,7 @@ import re
 import numpy
 
 from scipy.stats import nbinom
+from scipy.stats import moment
 import random
 
 def neg_bin(mean, var):
@@ -72,5 +73,9 @@ if __name__ == "__main__":
     # Testing DAR distribution
     dar_seq = numpy.array(take(10000, dar(cor1, mean, var)))
 
-    print dar_seq.mean(), dar_seq.var()
-    print acf(dar_seq)[:3]
+    print "DAR(1) mean, var: ", dar_seq.mean(), dar_seq.var()
+    print "DAR(1) ACF: ", acf(dar_seq)[1:3]
+
+    print "\n"
+    for i in xrange(2, 7):
+        print moment(dar_seq, i), moment(sizes, i)
