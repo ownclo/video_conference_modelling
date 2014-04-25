@@ -2,3 +2,10 @@ papers
 *.mp4
 *.yuv
 *.vim
+*.png
+*.aux
+*.log
+*.nav
+*.out
+*.toc
+*.snm

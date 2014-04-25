@@ -55,7 +55,7 @@ def acf(x):
 if __name__ == "__main__":
     tracefile = sys.argv[1]
     with open(tracefile) as f:
-        sizes = numpy.array(get_sizes(f))
+        sizes = numpy.array(get_sizes(f)[1:])
 
     mean = sizes.mean()
     var = sizes.var()
@@ -63,19 +63,44 @@ if __name__ == "__main__":
     corr = acf(sizes)
     cor1 = corr[1]
 
-    print "N:", sizes.size
-    print "Mean:", mean
-    print "Variance:", var
+    # # FRAME SIZES OVRER TIME
+    # i = 1
+    # for size in sizes:
+    #     print i, size
+    #     i += 1
 
-    print "Autocorrelation (shift = 1):", cor1
-    print "Autocorrelation (shift = 2):", corr[2]
+    # # CORRELATION COEFFICIENTS OVER LAG (ACF)
+    # for i in xrange(0, 100):
+    #     print i, corr[i]
+
+    # HISTOGRAM
+    # hist, edges = numpy.histogram(sizes, density=True)
+
+    # for e, h in zip(edges, hist):
+    #     print e, h
+
+    #print "N:", sizes.size
+    #print "Mean:", mean
+    #print "Variance:", var
+
+    #print "Autocorrelation (shift = 1):", cor1
+    #print "Autocorrelation (shift = 2):", corr[2]
 
     # Testing DAR distribution
     dar_seq = numpy.array(take(10000, dar(cor1, mean, var)))
+    #hs, es = numpy.histogram(dar_seq, density=True)
+    #for e, h in zip(es, hs):
+        #print e, h
 
-    print "DAR(1) mean, var: ", dar_seq.mean(), dar_seq.var()
-    print "DAR(1) ACF: ", acf(dar_seq)[1:3]
+    #print "DAR(1) mean, var: ", dar_seq.mean(), dar_seq.var()
+    dar_acf = acf(dar_seq)
+    sizes_acf = acf(sizes)
+    for i in xrange(0, 20):
+        print i, sizes_acf[i], dar_acf[i]
 
-    print "\n"
-    for i in xrange(2, 7):
-        print moment(dar_seq, i), moment(sizes, i)
+    #print "\n"
+    #for i in xrange(2, 7):
+        #morig = moment(sizes, i)
+        #mmodel = moment(dar_seq, i)
+
+        #print morig, mmodel, morig/mmodel
