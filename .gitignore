@@ -9,3 +9,4 @@ papers
 *.out
 *.toc
 *.snm
+*.pyc
