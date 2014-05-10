@@ -100,9 +100,15 @@ if __name__ == "__main__":
     sample_var = 107880.85923
 
     #dar_generator = dar.dar_p(sample_corrs, sample_mean, sample_var)
-    dar_generator = dar.dar_p(corr[1:3], mean, var)
-    dar2_seq = numpy.array(take(10000, dar_generator))
+    #dar_generator = dar.dar_p(corr[1:3], mean, var)
 
-    corr_dar2 = acf(dar2_seq)
-    print "DAR2 cor1, cor2: ", corr_dar2[0:5]
-    print "DAR2 mean, var:  ", dar2_seq.mean(), dar2_seq.var()
+    # Boris, Claire, MissAmerica - OK; Foreman, Suzie, Akiyo - NOP
+    corrs = corr[1:3]
+    p, alphas = dar.estimate_darp_probs(corrs)
+    print alphas
+
+    # dar2_seq = numpy.array(take(10000, dar_generator))
+
+    # corr_dar2 = acf(dar2_seq)
+    # print "DAR2 cor1, cor2: ", corr_dar2[0:5]
+    # print "DAR2 mean, var:  ", dar2_seq.mean(), dar2_seq.var()
