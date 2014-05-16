@@ -6,6 +6,8 @@ class FSM:
         self.states = states
         self.distributions = FSM.__make_dists(states)
 
+        # Need to start according to the stationary
+        # distribution.
         self.state = random.choice(states.keys())
 
     def tick(self):
@@ -47,16 +49,15 @@ def estimate_pmatrix(seq):
     pmatrix = {curr: (nexts.keys(), estimate_prob(nexts.values()))
                for curr, nexts in count_matrix.items()}
 
-    for _curr, nexts in pmatrix.items():
-        _states, probs = nexts
-        assert(sum(probs) == 1.0)
-
     return pmatrix
 
 def estimate_prob(counters):
     s = sum(counters)
-    # WOW. Such weak. Very duck
-    return [c * 1.0 / s for c in counters]
+    if s == 0.0:
+        return counters
+    else:
+        # WOW. Such weak. Very duck
+        return [c * 1.0 / s for c in counters]
 
 if __name__ == "__main__":
     # NOTE: State (ToState, Probabilities)

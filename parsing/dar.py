@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.stats import rv_discrete
 from scipy.stats import nbinom
+import random
 
 def neg_bin(mean, var):
     # Where does this is explained?
@@ -23,14 +24,17 @@ def dar1(cor1, mean, var):
 def corrmatrix(corrs):
     init = np.insert(corrs[:-1], 0, 1)
 
-    res = []
-    # XXX: There is a bug here. Matrix does not shift,
-    # it grows from diagonal to edges
-    for i in xrange(corrs.size):
-        res.append(np.roll(init, i))
+    res = [init]
+    for i in xrange(1, corrs.size):
+        res.append(get_shifted_row(i, init))
 
     return np.array(res)
 
+# XXX: does not work for ind == 0
+def get_shifted_row(ind, row):
+    rev_tail = row[1:][:ind][::-1]
+    head = row[:-1*ind]
+    return np.append(rev_tail, head)
 
 def estimate_darp_probs(corrs):
     corrm = corrmatrix(corrs)

@@ -8,6 +8,9 @@ import random
 
 import pyeeg
 import dar
+import markovian_model_linear
+import leaky_bucket as lb
+import quantizers as qs
 
 def take(n, seq):
     result = []
@@ -37,6 +40,37 @@ def acf(x):
     result = r/variance/n
     return result
 
+def histogram(seq):
+    hs, es = numpy.histogram(seq, density=True)
+    return zip(es, hs)
+
+def model_summary(original, model):
+    print "# FIRST SIX MOMENTS; ORIGINAL-MODEL"
+    omean = original.mean()
+    mmean = model.mean()
+    print omean, mmean
+    for i in xrange(2, 7):
+        morig = moment(original, i)
+        mmodel = moment(model, i)
+        print morig, mmodel
+    print "\n"
+
+    print "# HISTOGRAM ORIGINAL"
+    for e, h in histogram(original):
+        print e, h
+    print "\n"
+    print "# HISTOGRAM MODEL"
+    for e, h in histogram(model):
+        print e, h
+    print "\n"
+
+    print "# AUTOCORRELATION FUNCTION ACF(LAG); ORIGINAL-MODEL"
+    original_acf = acf(original)
+    model_acf = acf(model)
+    for i in xrange(0, 100):
+        print i, original_acf[i], model_acf[i]
+    print "\n"
+
 
 if __name__ == "__main__":
     tracefile = sys.argv[1]
@@ -50,65 +84,57 @@ if __name__ == "__main__":
     corr = acf(sizes)
     cor1 = corr[1]
 
-    # # FRAME SIZES OVRER TIME
+    # # FRAME SIZES OVER TIME
     # i = 1
     # for size in sizes:
     #     print i, size
     #     i += 1
 
     # CORRELATION COEFFICIENTS OVER LAG (ACF)
-    for i in xrange(0, 5):
-        print i, corr[i]
+    # for i in xrange(0, 5):
+    #     print i, corr[i]
+    # print pyeeg.hurst(sizes)
 
-    print corr[0:5]
-    print pyeeg.hurst(sizes)
-
-    # HISTOGRAM
-    # hist, edges = numpy.histogram(sizes, density=True)
-
-    # for e, h in zip(edges, hist):
-    #     print e, h
-
-    #print "N:", sizes.size
-    print "Mean:", mean
-    print "Variance:", var
-
-    #print "Autocorrelation (shift = 1):", cor1
-    #print "Autocorrelation (shift = 2):", corr[2]
+    drain_rate = sizes.mean()
+    stdev = numpy.std(sizes)
+    bucket_size = drain_rate + stdev
 
     # Testing DAR distribution
-    #dar_seq = numpy.array(take(10000, dar.dar1(cor1, mean, var)))
-    #hs, es = numpy.histogram(dar_seq, density=True)
-    #for e, h in zip(es, hs):
-        #print e, h
+    dar_seq = numpy.array(take(10000, dar.dar1(cor1, mean, var)))
+    # model_summary(sizes, dar_seq)
 
-    #print "DAR(1) mean, var: ", dar_seq.mean(), dar_seq.var()
-    #dar_acf = acf(dar_seq)
-    #sizes_acf = acf(sizes)
-    #for i in xrange(0, 20):
-    #    print i, sizes_acf[i], dar_acf[i]
+    # # Testing Markovian distribution
+    num_quants = 20
+    ml_seq = markovian_model_linear.gen_seq(sizes, 10000, num_quants, quantizer=qs.linear_quantizer)
+    mk_seq = markovian_model_linear.gen_seq(sizes, 10000, num_quants, quantizer=qs.kmeans_quantizer)
+    model_summary(sizes, ml_seq)
+    model_summary(sizes, mk_seq)
 
-    #print "\n"
-    #for i in xrange(2, 7):
-        #morig = moment(sizes, i)
-        #mmodel = moment(dar_seq, i)
+    # for bs in numpy.arange(sizes.mean() - stdev, sizes.mean() + stdev, stdev / 10.0):
+    #     num_loss = lb.leaky_bucket_loss(drain_rate, bs, sizes)
+    #     dar_loss = lb.leaky_bucket_loss(drain_rate, bs, dar_seq)
+    #     ml_loss = lb.leaky_bucket_loss(drain_rate, bs, ml_seq)
+    #     print bs, num_loss * 1.0 / sum(sizes), dar_loss * 1.0 / numpy.sum(dar_seq), ml_loss * 1.0 / numpy.sum(ml_seq)
 
-        #print morig, mmodel, morig/mmodel
+    # #dar_generator = dar.dar_p(sample_corrs, sample_mean, sample_var)
+    # dar2_generator = dar.dar_p(corr[1:3], mean, var)
 
-    sample_corrs = numpy.array([0.89, 0.7999])
-    sample_mean = 3287.0
-    sample_var = 107880.85923
+    # # Boris, Claire, MissAmerica - OK; Foreman, Suzie, Akiyo - NOP
+    # # corrs = corr[1:3]
+    # # p, alphas = dar.estimate_darp_probs(corrs)
+    # # print alphas
 
-    #dar_generator = dar.dar_p(sample_corrs, sample_mean, sample_var)
-    #dar_generator = dar.dar_p(corr[1:3], mean, var)
+    # dar2_seq = numpy.array(take(10000, dar2_generator))
+    # model_summary(sizes, dar2_seq)
 
-    # Boris, Claire, MissAmerica - OK; Foreman, Suzie, Akiyo - NOP
-    corrs = corr[1:3]
-    p, alphas = dar.estimate_darp_probs(corrs)
-    print alphas
+    # dar3_generator = dar.dar_p(corr[1:4], mean, var)
+    # dar3_seq = numpy.array(take(10000, dar3_generator))
+    # model_summary(sizes, dar3_seq)
 
-    # dar2_seq = numpy.array(take(10000, dar_generator))
+    # dar4_generator = dar.dar_p(corr[1:5], mean, var)
+    # dar4_seq = numpy.array(take(10000, dar4_generator))
+    # model_summary(sizes, dar4_seq)
 
-    # corr_dar2 = acf(dar2_seq)
-    # print "DAR2 cor1, cor2: ", corr_dar2[0:5]
-    # print "DAR2 mean, var:  ", dar2_seq.mean(), dar2_seq.var()
+    # dar10_generator = dar.dar_p(corr[1:11], mean, var)
+    # dar10_seq = numpy.array(take(10000, dar10_generator))
+    # model_summary(sizes, dar10_seq)
